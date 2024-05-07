@@ -54,14 +54,24 @@ ScrollReveal().reveal('.home-content, .heading', {origin: 'top'});
 ScrollReveal().reveal('#devPic, .services-container, .portfolio-box, .contact form', {origin: 'bottom'});
 ScrollReveal().reveal('.home-content h1, #aboutDevPic', {origin: 'left'});
 ScrollReveal().reveal('.home-content p, .about-content', {origin: 'right'});
+ScrollReveal().reveal('.skills-list', {origin: 'bottom', interval: 200});
+
+
 
 // Typed Js
 
 const typed=new Typed('.multiple-text', {
-    strings: ['Web Developer', 'Writer', 'Graphic Designer'],
+    strings: ['Web Developer', 'Author', 'Graphic Designer'],
     typeSpeed: 100,
     backSpeed: 100,
     backDelay:1000,
     loop: true
 });
 
+//Automatic current year
+document.addEventListener("DOMContentLoaded", function() {
+    const yearElement = document.getElementById("year"); // Replace "year" with your element's ID
+    if (yearElement) {
+      yearElement.textContent = new Date().getFullYear();
+    }
+  });

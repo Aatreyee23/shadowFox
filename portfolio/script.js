@@ -75,3 +75,4 @@ document.addEventListener("DOMContentLoaded", function() {
       yearElement.textContent = new Date().getFullYear();
     }
   });
+

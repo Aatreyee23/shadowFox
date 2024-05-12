@@ -33,6 +33,7 @@ body{
 
 section{
     min-height: 100vh;
+    width:100vw;
     padding: 10rem 9% 2rem;
 }
 
@@ -508,6 +509,14 @@ span{
     margin-top: 2rem;
     cursor:pointer;
 }
+
+.contact form .error-text{
+    color: red;
+    font-size: 1.3rem;
+    margin: 1rem;
+    display:none;
+}
+
 
 .footer{
    display:flex;

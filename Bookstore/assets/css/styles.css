@@ -671,6 +671,55 @@ body.dark-theme{
   margin-bottom: 2rem;
 }
 
+/*=============== PUBLISHERS ===============*/
+.publisher__container{
+  row-gap:3rem;
+  background-color: var(--container-color);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 1rem;
+  text-align: center;
+  margin: 2rem;
+}
+
+.publisher__container img{
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  align-items: center;
+  object-position: center;
+  transition: transform .4s;
+}
+
+.publisher__main{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+.publisher-item:hover{
+  border:2px solid var(--first-color);
+  background-color: rgba(173, 215, 251, 0.571);
+  color:var(--first-color)
+}
+
+.publisher-item{
+  border:2px solid var(--border-color);
+  border-radius: 10px;
+  padding:1rem;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  gap:2rem;
+  transition: border .4s;
+}
+
+
 /*=============== JOIN ===============*/
 .join__container{
   position:relative;
@@ -730,6 +779,7 @@ body.dark-theme{
 .testimonial__img{
   width:100px;
   border-radius: 50%;
+  border:2px solid var(--text-color);
   margin:0 auto 1.5rem;
 }
 

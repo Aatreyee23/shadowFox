@@ -111,6 +111,29 @@ let swiperNew = new Swiper('.new__swiper', {
     }
   });
 
+  /*=============== PUBLISHERS SWIPER ===============*/
+
+  let swiperPublisher = new Swiper('.publisher__swiper', {
+    loop: true,
+    spaceBetween: 16,
+    grabCursor: true,
+    slidesPerView: 'auto',
+    centeredSlides: 'auto',
+
+    navigation:{
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+    
+
+    breakpoints: {
+        1150:
+        {
+            slidesPerView: 6,
+            centeredSlides: false,
+        }
+    }
+  });
 
 
 /*=============== TESTIMONIAL SWIPER ===============*/
@@ -202,7 +225,7 @@ const sr = ScrollReveal({
     reset:true,
   });
 
-  sr.reveal('.home__data, .featured__container, .new__container, .join__data, .testimonial__container, .footer'); 
+  sr.reveal('.home__data, .featured__container,.publisher__container, .new__container, .join__data, .testimonial__container, .footer'); 
 
   sr.reveal('.home__images', { delay: 600 });  
 
